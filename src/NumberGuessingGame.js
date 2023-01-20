@@ -14,10 +14,14 @@ function getRandomNumber() {
 const MAX_ATTEMPTS = 5;
 
 class NumberGuessingGame extends Component {
+  // This part is for state management and inheriting props
   constructor(props) {
+    // Any props you are passing in when you call the component - are accessible through props.<whatever_name_is_here>
     super(props);
-
+    // Setting up your "useStates"
+    // For example const [numberToGuess, setNumberToGuess] = useState(getRandomNumber());
     this.state = {
+      // These are the initial values that you are storing in state
       numberToGuess: getRandomNumber(),
       numberOfGuesses: 0,
       latestGuess: null,
@@ -31,9 +35,12 @@ class NumberGuessingGame extends Component {
     this.handleReset = this.handleReset.bind(this);
   }
 
+  // These are then just whatever functions/methods you're defining
   handleGuess(guess) {
+    // This is the "same" as using the setVariableName from the useState hook
     this.setState({
       latestGuess: guess,
+      // this.state.numberOfGuesses is what is currently stored in numberOfGuesses on line 25
       numberOfGuesses: this.state.numberOfGuesses + 1,
     });
   }
