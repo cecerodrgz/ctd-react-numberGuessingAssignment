@@ -25,4 +25,4 @@ function GuessControl ({onGuess}) {
   );
 
 }
-export default GuessControl;
+export default guessGame;

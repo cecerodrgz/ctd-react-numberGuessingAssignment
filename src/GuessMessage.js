@@ -24,5 +24,5 @@ function getGuessMessage(guess, numberToGuess) {
     );
   }
   
-  export default GuessMessage;
+  export default guessMessage;
   
