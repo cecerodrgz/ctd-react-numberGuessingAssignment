@@ -14,7 +14,7 @@ function getGuessMessage(guess, numberToGuess) {
       }
     }
   }
-  
+ 
   function GuessMessage({ guess, numberToGuess, numberOfGuesses }) {
     return (
       <div>
@@ -23,6 +23,5 @@ function getGuessMessage(guess, numberToGuess) {
       </div>
     );
   }
-  
-  export default guessMessage;
-  
+ 
+  export default GuessMessage;
