@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function GuessControl ({onGuess}) {
 
-  const [currentGuess, setCurrentGuess] = useState([]);
+  const [currentGuess, setCurrentGuess] = useState('');
 
   const handleInputChange = (event) => {
     setCurrentGuess(event.target.value)
